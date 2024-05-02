@@ -4,9 +4,21 @@ using UnityEngine;
 
 public class VampirizmDetected : MonoBehaviour
 {
+    [SerializeField] private SpriteRenderer _boundarySprite;
+
     private List<Enemy> _enemyDetected = new List<Enemy>();
 
     public List<Enemy> EnemyDetected => _enemyDetected;
+
+    public void RenderSprite()
+    {
+        _boundarySprite.gameObject.SetActive(true);
+    }
+
+    public void DeactivationSprite()
+    {
+        _boundarySprite.gameObject.SetActive(false);
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

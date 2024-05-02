@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class RunAnimation : MonoBehaviour
 {
+    private const string Run = "Run";
+
     private Animator _animator;
 
     private void Start()
@@ -14,6 +16,6 @@ public class RunAnimation : MonoBehaviour
 
     public void AnimationRun()
     {
-        _animator.SetFloat("Run", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
+        _animator.SetFloat(Run, Mathf.Abs(Input.GetAxisRaw("Horizontal")));
     }
 }

@@ -3090,6 +3090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 231958d3df421904686f61f36ce9543c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _boundarySprite: {fileID: 195806418}
 --- !u!61 &1622235934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3228,7 +3229,6 @@ GameObject:
   - component: {fileID: 1685154539}
   - component: {fileID: 1685154540}
   - component: {fileID: 1685154541}
-  - component: {fileID: 1685154542}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -3339,8 +3339,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1c595f4e0a840645b3f8b7dc1ebfcae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 3
+  speed: 3
   spriteRenderer: {fileID: 1685154532}
+  jumpForce: 3
 --- !u!114 &1685154535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3456,11 +3457,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55affb9a0f37c964f8cf58ea4b7512cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _layerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  _detectorSize: {x: 4, y: 4}
-  _boundarySprite: {fileID: 195806418}
   _vampirizmDetected: {fileID: 1622235933}
   CooldownVampirizmText: {fileID: 1794484933}
 --- !u!114 &1685154541
@@ -3475,32 +3471,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f535ed8fcf32e3a468258cf4d97eb2cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &1685154542
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685154530}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.875, y: 1.25}
-    newSize: {x: 0.875, y: 1.25}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4, y: 4}
-  m_EdgeRadius: 0
 --- !u!1 &1794484931
 GameObject:
   m_ObjectHideFlags: 0
